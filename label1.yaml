@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: javawebapptest
+  labels:
+    app: javawebappTest
+    env: prod
+  namespace: prod
+spec:
+  containers:
+  - name: javawebapp1
+    image: kkeducationb2/java-webapp:1.1
+    ports:
+    - containerPort: 8080
